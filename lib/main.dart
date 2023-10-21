@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const WidgetDetail());
+  runApp(const Test());
 }
 
 class WidgetDetail extends StatelessWidget{
@@ -28,4 +28,38 @@ class WidgetDetail extends StatelessWidget{
     );
   }
 }
+
+class Test extends StatefulWidget {
+  const Test({super.key});
+
+  @override
+  State<Test> createState() => _TestState();
+}
+
+  class _TestState extends State<Test>{
+  int value=0;
+  @override
+  Widget build(BuildContext context){
+  return MaterialApp(
+    home: Scaffold(
+      body: Center(child: Column(
+        children: [
+          Text(value.toString()),
+          ElevatedButton(
+              onPressed: () {
+                setState(() {
+                  value =value+1;
+                });
+              },
+              child: const Text("Tıkla"),
+           )
+        ],
+      )),
+    ),
+  );
+  }
+}
+
+
+
 
