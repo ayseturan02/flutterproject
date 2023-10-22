@@ -35,6 +35,10 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  hexcolor: ^3.0.1
+  google_fonts: ^5.1.0
+
+
 
 
 dev_dependencies:
@@ -79,9 +83,9 @@ flutter:
   fonts:
       - family: Ayse
         fonts:
-          - asset: lib/assets/fonts/AlumniSansCollegiateOne-Italic.tff
-          - asset: lib/assets/fonts/Roboto-Regular.ttf
-            weight: 200
+          - asset: lib/assets/fonts/Agdasima-Bold.ttf
+          - asset: lib/assets/fonts/Agdasima-Regular.ttf
+            weight: 700
 
   #   - family: Trajan Pro
   #     fonts:
