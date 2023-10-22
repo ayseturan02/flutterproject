@@ -27,12 +27,19 @@ class _WidgetDetailState extends State<WidgetDetail> {
           backgroundColor: Colors.deepOrange,
           leading: const Text("Menu"),
         ),
-        body: Container(
-          color: Colors.green,
-          child: const Padding(
-              padding: const EdgeInsets.all(20.0),
-              child: Text("Ornek"), //altta bunu yazarsan sadece ornek yazan yer yeşil olur
-          ),
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: <Widget>[
+             const Text("örnek"),
+            ElevatedButton(onPressed: () {}, child: const Text("tıkla"),
+            ),
+            Container(
+              padding: const EdgeInsets.all(30),
+              color: Colors.green,
+              child: const Text("Container"),
+            ),
+          ],
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
