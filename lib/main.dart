@@ -27,9 +27,11 @@ class _WidgetDetailState extends State<WidgetDetail> {
           backgroundColor: Colors.deepOrange,
           leading: const Text("Menu"),
         ),
-        body: const Center(
-          child: Image(
-            image: AssetImage("lib/assets/images/photo1.jpg"), //networkimage(url)
+        body: Container(
+          color: Colors.green,
+          child: const Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Text("Ornek"), //altta bunu yazarsan sadece ornek yazan yer yeşil olur
           ),
         ),
         floatingActionButton: FloatingActionButton(
