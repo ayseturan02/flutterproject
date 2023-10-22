@@ -27,18 +27,17 @@ class _WidgetDetailState extends State<WidgetDetail> {
           backgroundColor: Colors.deepOrange,
           leading: const Text("Menu"),
         ),
-        body: Row(
+        body:  Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: <Widget>[
-             const Text("örnek"),
-            ElevatedButton(onPressed: () {}, child: const Text("tıkla"),
-            ),
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const Text("Ornek"),
+            ElevatedButton(onPressed: () {}, child: const Text("Tıkla")),
             Container(
+              color: Colors.red,
               padding: const EdgeInsets.all(30),
-              color: Colors.green,
               child: const Text("Container"),
-            ),
+            )
           ],
         ),
         floatingActionButton: FloatingActionButton(
