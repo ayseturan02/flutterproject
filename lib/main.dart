@@ -27,20 +27,9 @@ class _WidgetDetailState extends State<WidgetDetail> {
           backgroundColor: Colors.deepOrange,
           leading: const Text("Menu"),
         ),
-        body:  Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(value.toString()),
-               Text(
-                 "ayse turan",
-                 style: GoogleFonts.acme(
-                     fontSize: 40,
-                     color: HexColor(primaryColor)
-                 )
-              ),
-              const Text("ornek")
-            ],
+        body: const Center(
+          child: Image(
+            image: AssetImage("lib/assets/images/photo1.jpg"), //networkimage(url)
           ),
         ),
         floatingActionButton: FloatingActionButton(
